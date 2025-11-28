@@ -7,18 +7,18 @@ class Recall < Formula
   on_macos do
     on_intel do
       url "https://github.com/zippoxer/recall/releases/download/v#{version}/recall-macos-intel.tar.gz"
-      sha256 "46c3360536b86a5fbf3570460141769b3492c9d3ae6d2c693bb85cd2404f14c4"
+      sha256 "e5a3e81e7f19785de2a370895d345ca010d51d85105b71f9fe6cf6ebba8ce7cf"
     end
 
     on_arm do
       url "https://github.com/zippoxer/recall/releases/download/v#{version}/recall-macos-arm64.tar.gz"
-      sha256 "9c8c167d8d625adf847824dc4b56c40f41cd0e19ccf0524defd13023f03c21a6"
+      sha256 "874fe3619ac207faa2362cc3ea9fe2e9121239e261189fcf64817c50a12780cd"
     end
   end
 
   on_linux do
     url "https://github.com/zippoxer/recall/releases/download/v#{version}/recall-linux-x86_64.tar.gz"
-    sha256 "b7487783ecf5350718a7217350794eecc90d4bd27f6654fafc9a02e1b91101d2"
+    sha256 "df752eb0ccfe3b5a2fe14db1e453364b6477271381f5a7a8a1778758ff9791af"
   end
 
   def install
