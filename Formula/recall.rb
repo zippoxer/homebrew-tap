@@ -1,24 +1,24 @@
 class Recall < Formula
   desc "Search and resume your Claude Code and Codex CLI conversations"
   homepage "https://github.com/zippoxer/recall"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     on_intel do
       url "https://github.com/zippoxer/recall/releases/download/v#{version}/recall-macos-intel.tar.gz"
-      sha256 "98f2db4380d81fe7a5c0d6bbbe46de36374719f3f120588cb17b7c58e13940b8"
+      sha256 "8774ba24c1fe447a5c844491bf11ca63d324ba99b16278bcffdbe124b53f2a7f"
     end
 
     on_arm do
       url "https://github.com/zippoxer/recall/releases/download/v#{version}/recall-macos-arm64.tar.gz"
-      sha256 "7b5ec97e75df6eb901e030295a2d51c9b23e84635b8056fd470d3495056e7586"
+      sha256 "a59d85ae904cb8f9b2a266ff3a341525010d9adf193bc291a66b5992cde38a88"
     end
   end
 
   on_linux do
     url "https://github.com/zippoxer/recall/releases/download/v#{version}/recall-linux-x86_64.tar.gz"
-    sha256 "92a5b6ee91a7b06030cf2200a6df88d25c042f470024c0274326e4f6d9ccfc01"
+    sha256 "a750044ea985942bb9112ae9e8b8d2aef40336fd4f8ef9e3f73401cec4c41041"
   end
 
   def install
@@ -26,6 +26,6 @@ class Recall < Formula
   end
 
   test do
-    assert_match "recall", shell_output("#{bin}/recall --help 2>&1", 1)
+    assert_match "recall", shell_output("#{bin}/recall --help")
   end
 end
