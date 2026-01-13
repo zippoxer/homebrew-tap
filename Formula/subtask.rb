@@ -5,21 +5,21 @@
 class Subtask < Formula
   desc "Parallel task orchestration for AI coding agents."
   homepage "https://github.com/zippoxer/subtask"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zippoxer/subtask/releases/download/v0.1.1/subtask_0.1.1_darwin_amd64.tar.gz"
-      sha256 "a2a5273991054ed360d16a12522626696c66648cc18265a297387964f4b38de6"
+      url "https://github.com/zippoxer/subtask/releases/download/v0.2.0/subtask_0.2.0_darwin_amd64.tar.gz"
+      sha256 "32588e9e88fe237319bd9d63430e6397ce59fa0673e2b36f96bc0b28b7020f4a"
 
       def install
         bin.install "subtask"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zippoxer/subtask/releases/download/v0.1.1/subtask_0.1.1_darwin_arm64.tar.gz"
-      sha256 "3c67f0036b6827b2bfc746cd4a0214047a85f5a2f17618de640df21e1feb7fe6"
+      url "https://github.com/zippoxer/subtask/releases/download/v0.2.0/subtask_0.2.0_darwin_arm64.tar.gz"
+      sha256 "4a56b97419149a136d4da0562a55eaab4c109e4648e6d335299d38aa81bad95a"
 
       def install
         bin.install "subtask"
@@ -29,15 +29,15 @@ class Subtask < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zippoxer/subtask/releases/download/v0.1.1/subtask_0.1.1_linux_amd64.tar.gz"
-      sha256 "fb0de955b549d139bbc160ae10ad465106ace6032aaf421e6749a717c4bd3ce0"
+      url "https://github.com/zippoxer/subtask/releases/download/v0.2.0/subtask_0.2.0_linux_amd64.tar.gz"
+      sha256 "8efb016383759b3c83c4ddd0cab4d77420c0fd7b951acd6f3b997eb5efea14e2"
       def install
         bin.install "subtask"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zippoxer/subtask/releases/download/v0.1.1/subtask_0.1.1_linux_arm64.tar.gz"
-      sha256 "ea4f83bf87fb3caeb76acc07fec05ae3cde538180af4beba38c674c5dbb91902"
+      url "https://github.com/zippoxer/subtask/releases/download/v0.2.0/subtask_0.2.0_linux_arm64.tar.gz"
+      sha256 "1a821efbe33c973293c798bf20a644ef96cee541f8bddb7882eaf091ed87a2fe"
       def install
         bin.install "subtask"
       end
