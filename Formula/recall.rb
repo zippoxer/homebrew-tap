@@ -1,13 +1,13 @@
 class Recall < Formula
   desc "Search and resume your Claude Code and Codex CLI conversations"
   homepage "https://github.com/zippoxer/recall"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_intel do
       url "https://github.com/zippoxer/recall/releases/download/v#{version}/recall-macos-intel.tar.gz"
-      sha256 "e1fd12a6ff46b0b1a67f25110265145a31ff6c28fa66bb910f4b7865134b9f76"
+      sha256 "86aee348b5a15f2aa18d8c6536d65089e8fcf68ff43b46fefc56f3ab5e791e16"
     end
 
     on_arm do
