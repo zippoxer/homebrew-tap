@@ -5,21 +5,21 @@
 class Subtask < Formula
   desc "Parallel task orchestration for AI coding agents."
   homepage "https://github.com/zippoxer/subtask"
-  version "0.0.0-test1"
+  version "0.0.1-test2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zippoxer/subtask/releases/download/v0.0.0-test1/subtask_0.0.0-test1_darwin_amd64.tar.gz"
-      sha256 "4d50d9ef8bd05083386a83f81463dcc607a7fa75515234389688698b7d75d5b7"
+      url "https://github.com/zippoxer/subtask/releases/download/v0.0.1-test2/subtask_0.0.1-test2_darwin_amd64.tar.gz"
+      sha256 "a1cd40e92dad8bd76c2d49e90dcef7e88a7d04646155c84fc573b2f1fd9e4895"
 
       def install
         bin.install "subtask"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zippoxer/subtask/releases/download/v0.0.0-test1/subtask_0.0.0-test1_darwin_arm64.tar.gz"
-      sha256 "04718a2bc16a15326f91cfc8811ca07ea7e79f08a2d62a6c7a42ec4e35b16984"
+      url "https://github.com/zippoxer/subtask/releases/download/v0.0.1-test2/subtask_0.0.1-test2_darwin_arm64.tar.gz"
+      sha256 "7d1142989810bd80feeab19a215aac1f17eee6c3dfee04c4e633cf03ded60c00"
 
       def install
         bin.install "subtask"
@@ -29,15 +29,15 @@ class Subtask < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zippoxer/subtask/releases/download/v0.0.0-test1/subtask_0.0.0-test1_linux_amd64.tar.gz"
-      sha256 "f512cc44259d2e901d9f39ad43d1837c4d9f644313108db45d109f31b6ec52b2"
+      url "https://github.com/zippoxer/subtask/releases/download/v0.0.1-test2/subtask_0.0.1-test2_linux_amd64.tar.gz"
+      sha256 "8ea50a3fbed433a8c241dd31e604821625000ae41b1e95788bf3fca1c40175af"
       def install
         bin.install "subtask"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zippoxer/subtask/releases/download/v0.0.0-test1/subtask_0.0.0-test1_linux_arm64.tar.gz"
-      sha256 "91a90654c0b11b0074904bc5dfd9b1c46f2f0008de99f37aff8708ee02d58db2"
+      url "https://github.com/zippoxer/subtask/releases/download/v0.0.1-test2/subtask_0.0.1-test2_linux_arm64.tar.gz"
+      sha256 "73b87df35db4ea4b3740ea6232b8efaed47fe843bf471b42e9f9b81d9e81199d"
       def install
         bin.install "subtask"
       end
